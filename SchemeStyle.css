@@ -1,0 +1,378 @@
+/* *{
+    margin : 0px;
+    padding : 0px;
+}
+
+.central-container{
+    height : 100vh;
+    width : 100%;
+    position: absolute;
+}
+
+.half1{
+    height : 100%;
+    width : 100%;
+    display : flex;
+    position : relative;
+    justify-content: center;
+    align-items:center;
+}
+
+.central-card{
+    height : 300px;
+    width : 400px;
+    overflow:hidden;
+    position : relative;
+    border : 4px solid white;
+}
+
+.central-img{
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+    border-radius : 10px;
+} */
+*{
+    margin : 0px;
+    padding : 0px;
+}
+body{
+    background : url('Scheme-bg.jpeg');
+    background-size : cover;
+    margin : 0px;
+    padding : 0px;
+}
+/**/
+header .logo{
+    position: relative;
+    font-size: 700;
+    color: rgb(156, 228, 156);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+.banner{
+    position: relative;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: -32px;
+    left: -44px;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    transition: 0.6s;
+    padding: 25px 100px;
+    z-index: 100000;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none ;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(125, 224, 125);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 40px 100px;
+}
+header.sticky ul li a{
+    color: #eb6464;
+}
+header:before{
+    left : -9px;
+    top : -18px;
+    content : "";
+    position : absolute;
+    height : 93%;
+    width : 101%;
+    background-color : black;
+    opacity: 0.4;
+    z-index : -1;
+    border : 2px solid;
+    border-radius : 10px;
+}
+/**/
+/* Dileep */
+.central-container{
+    margin : 85px 0px;
+}
+.title{
+    text-align: center;
+    margin: 14px auto 44px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-size : 40px;
+    font-style : bold;
+    font-weight : 300px;
+}
+.title::after{
+    content: '';
+    background: #ff4b33;
+    width: 142px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading{
+    text-align : center;
+    text-transform: uppercase;
+    margin : 5px;
+    font-family: 'Inconsolata', monospace;
+    /* text-decoration: underline; */
+    /* text-decoration-thickness: 3px; */
+    /* text-decoration-style: solid; */
+    /* text-decoration-color: rgb(218, 11, 11); */
+    color: rgb(56, 55, 55);
+}
+.half1{
+    width : 100%;
+    height: 54vh;
+    /* background : whitesmoke; */
+    /* background : url('cow2.jpg'); */
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    /* border : 3px solid black; */
+}
+.half2{
+    width : 100%;
+    height: 54vh;
+    /* background : url('cow2.jpg'); */
+    /* background : black; */
+    display : flex;
+    /* background : whitesmoke; */
+    justify-content : center;
+    align-items : center;
+}
+.central-card{
+    width: 294px;
+    height: 380px;
+    /* width : 320px;
+    height: 500px; */
+    border-radius : 20px;
+    overflow : hidden;
+    border : 4px solid white;
+    position : relative;
+    margin: 7px;
+}
+
+.card-img{
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+    border-radius : 10px;
+}
+
+.card-body{
+    /* width : 82%;
+    height : 88%;
+    top : 0px;
+    right : -100%; */
+    border-radius: 10px;
+    width: 80%;
+    height: 322px;
+    top: 0px;
+    right: -103%;
+    position : absolute;
+    background: rgb(11, 10, 10,0.3);
+    backdrop-filter : blur(5px);
+    color : white;
+    padding : 30px;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    transition : 2s;
+}
+
+.heading2{
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 100;
+}
+
+.full-form{
+    text-transform: capitalize;
+    font-size:14px;
+    font-weight : 300;
+}
+
+.details{
+    font-size:16px;
+    line-height : 25px;
+    margin : 40px 0;
+    font-weight : 400;
+}
+
+.btn{
+    color : white;
+    background : black;
+    padding : 10px 20px;
+    border-radius : 5px;
+    text-transform : capitalize;
+    border : none;
+    outline : none;
+    font-weight : 500;
+    cursor : pointer;
+    width : 120px;
+}
+
+.btn:hover{
+    color : black;
+    background : white;
+}
+.inbtn{
+    text-decoration: none;
+    color : white;
+}
+.btn:hover .inbtn{
+    color : black;
+}
+.central-card:hover .card-body{
+    right : 0;
+}
+
+/*------ footer ------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyrigth{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Scroll up */
+/* Set the styles for the "scroll to top" button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change the button's background color on hover */
+  .scroll-top-btn:hover {
+    background-color: #9ae7a7;
+  }
+  
+  /* Hide the button by default */
+  .scroll-top-btn.hidden {
+    display: none;
+  }
+  
+  /* Show the button when the user scrolls down 20px from the top of the document */
+  @media screen and (min-width: 768px) {
+    /* Only show the button on screens that are at least 768px wide */
+    .scroll-top-btn.show {
+      display: block;
+    }
+  }
+
+  
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #fff;
+}
